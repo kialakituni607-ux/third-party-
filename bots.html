@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Bots</title>
+</head>
+<body>
+
+<h2>🤖 Free Bots</h2>
+
+<input type="file" id="botFile">
+<button onclick="runBot()">Run Bot</button>
+
+<p id="status"></p>
+
+<script>
+function runBot(){
+  const file = document.getElementById("botFile").files[0];
+
+  if(!file){
+    alert("Upload a bot first!");
+    return;
+  }
+
+  document.getElementById("status").innerText = "Bot running... (demo)";
+}
+</script>
+
+</body>
+</html>
