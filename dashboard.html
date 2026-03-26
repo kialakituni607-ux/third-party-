@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h1>📊 Trading Dashboard</h1>
+
+<!-- Deriv Bot -->
+<iframe src="https://app.deriv.com/bot" width="100%" height="500px"></iframe>
+
+<br><br>
+
+<button onclick="quickStrategy('even')">Even Strategy</button>
+<button onclick="quickStrategy('odd')">Odd Strategy</button>
+<button onclick="quickStrategy('over')">Over Strategy</button>
+
+<script>
+function quickStrategy(type){
+  alert("Running " + type + " strategy (connect API later)");
+}
+</script>
+
+</body>
+</html>
