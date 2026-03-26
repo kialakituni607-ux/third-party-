@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analysis Tool</title>
+</head>
+<body>
+
+<h2>📈 Market Analysis</h2>
+
+<p>Simple AI signals (demo):</p>
+
+<button onclick="generateSignal()">Get Signal</button>
+
+<h3 id="result"></h3>
+
+<script>
+function generateSignal(){
+  const signals = ["BUY 📈", "SELL 📉"];
+  const random = Math.floor(Math.random()*signals.length);
+  document.getElementById("result").innerText = signals[random];
+}
+</script>
+
+</body>
+</html>
